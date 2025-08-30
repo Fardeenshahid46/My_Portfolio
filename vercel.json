@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "Dportfolio/index.html", "use": "@vercel/static" },
+    { "src": "Dportfolio/**/*", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "Dportfolio/$1" }
+  ]
+}
